@@ -35,8 +35,7 @@ class UI {
     const form = document.querySelector("#book-form");
 
     container.insertBefore(div, form);
-    // bu işlemden sonra 5 saniye sonra çalışak bir kod bırakıyorum.
-    // bıraktığım kod 5 saniye sonra çalışaşak ve çalışınca da yeni eklediğim div i DOM'dan silecek
+
     setTimeout(function () {
       document.querySelector(".alert").remove();
     }, 5000);
@@ -80,7 +79,6 @@ class Store {
     });
   }
 
-  // localStorage'dan kayıt silen metot
   static removeBook(isbn) {
     const books = Store.getBooks();
 
